@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ustel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/silme"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/white"
+            android:onClick="butontıklama"
+            app:srcCompat="@drawable/ic_baseline_backspace_24"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="527dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/radyan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="Rad"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/kok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="√"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/red"
+                    android:onClick="butontıklama"
+                    android:text="C"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/parantez"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="("
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/parantez2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text=")"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/yuzde"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="%"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/bolme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="/"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/sin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="sin"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/cos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="cos"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/tan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="tan"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/yedi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/sekiz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/dokuz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="9"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/carpma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="X"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/ln"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="ln"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/log"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="log"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/bolum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="1/x"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/dort"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/bes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="5"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/alti"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/eksi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/eussux"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="e^x"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/xkare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="x^2"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/xussuy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="x^y"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/bir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/iki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/uc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/arti"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/mutlakdeger"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="|x|"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/pi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="π"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/esayi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="e"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/ucsifir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="000"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/sifir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/ondalik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray"
+                    android:onClick="butontıklama"
+                    android:text=","
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/esittir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/teal_200"
+                    android:onClick="butontıklama"
+                    android:text="="
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    app:cornerRadius="100dp"
+
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout2"
+        tools:layout_editor_absoluteX="16dp">
+
+        <EditText
+            android:id="@+id/yazi"
+            android:layout_width="655dp"
+            android:layout_height="67dp"
+            android:layout_marginBottom="400dp"
+            android:autofillHints="false"
+            android:inputType="none"
+            android:text="@string/start"
+            android:textAlignment="textEnd"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
